@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>larpmonkeys.com</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Hall of larpers.">
+</head>
+<body>
+    <div id="overlay" role="button" aria-label="Click to Enter" onclick="playMusicAndHideOverlay()">
+        Click to Enter
+    </div>
+    
+    <div class="volume-slider-container">
+        <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <video id="bgVideo" autoplay muted loop playsinline>
+        <source src="bg.mp4" type="video/mp4" />
+    </video>
+
+    <div class="blur-overlay"></div>
+    <div class="gif-container">
+        <img src="larpmonkeys.png" alt="Larp Monkeys" />
+        <p class="hoa">HALL OF LARPERS</p>
+    </div>
+
+    <div class="button-container">
+        <button class="outlined-button" onclick="window.location.href='index.html';">Home</button>
+        <button class="outlined-button" onclick="window.location.href='depot.html';">Depot</button>
+        <button class="outlined-button" onclick="window.location.href='archive.html';">Archive</button>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="profile-card-container">
+        <div class="profile-card">
+            <img src="user1.png" />
+            <div class="info">
+                <h2>Classified</h2>
+                <p>Claims to be a master hacker and can perform EDR bypasses. In reality just downloads public DLLs and crashes people with particle avatars. Gets rejected by every girl he talks to but keeps trying. Claims to steal credit cards but can't even crack a basic captcha.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user2.jpg" />
+            <div class="info">
+                <h2>112</h2>
+                <p>Joined random crews claiming to know everyone in the scene. Got exposed for being a CP spreader and extorter. Now banned from most communities but still tries to make alts. Claims to have connections but really just a discord lurker.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user3.gif" />
+            <div class="info">
+                <h2>Blue Phoenix</h2>
+                <p>45 year old woman grooming teenagers in VRChat. Known for targeting minors and making them uncomfortable. Multiple people have spoken out but she keeps making new accounts. Absolute predator.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user4.png" />
+            <div class="info">
+                <h2>Courtbox</h2>
+                <p>Cemetery wannabe who larps about knowing famous people. Claims to be connected to big groups but really just name drops and hopes someone believes him. Spends his time singing on Instagram thinking he's famous.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user5.png" />
+            <div class="info">
+                <h2>Arab Jinn</h2>
+                <p>Claims to crack cheats but begs everyone for DLLs. Caught multiple times talking to minors. Watches BBC cuck porn and isn't ashamed about it. Currently in rehab for fent addiction. Classic VRChat degenerate.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user6.png" />
+            <div class="info">
+                <h2>Script Kiddie #1</h2>
+                <p>Downloads public mod menus and thinks he's a hacker. Crashes lobbies and steals avatars then acts tough. Can't write a single line of code but flexes like he's Mr. Robot. Gets his mods from YouTube tutorials.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user7.png" />
+            <div class="info">
+                <h2>Fake Doxxer</h2>
+                <p>Threatens to dox everyone he meets but has zero actual info. Just uses spokeo and thinks he's a cybersecurity expert. Posts random addresses from Google and hopes people believe him. Pure larp energy.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user8.png" />
+            <div class="info">
+                <h2>VR Predator</h2>
+                <p>Hangs out in worlds with minors and tries to groom them. Gets banned repeatedly but makes new accounts. Known for "love bombing" kids until they trust him then takes them to private worlds. Absolute scum.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user9.png" />
+            <div class="info">
+                <h2>Crash Avatar User</h2>
+                <p>Only wears particle crash avatars and ruins public lobbies for fun. No personality, just crashes people and laughs about it. Gets off on making others miserable. Zero skills outside of being annoying.</p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="user10.png" />
+            <div class="info">
+                <h2>Catfish Extraordinaire</h2>
+                <p>Uses voice changers and anime girl avatars to catfish lonely dudes. Scams them for Steam cards and Discord Nitro. Has multiple "boyfriends" at once. Master manipulator who preys on desperate people.</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="backgroundAudio" src="song4.mp3" loop autoplay></audio>
+
+    <div id="clock"></div>
+    <div id="timeCheckPopup" style="display: none;">
+        You should go to bed!
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
